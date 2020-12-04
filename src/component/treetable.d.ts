@@ -1,10 +1,10 @@
 /**
  * Created by andrew.yang on 3/22/2017.
  */
-import { EventEmitter, QueryList, Renderer2, SimpleChanges, OnInit } from '@angular/core';
+import { EventEmitter, QueryList, Renderer2, SimpleChanges, OnInit, AfterViewInit, OnChanges, OnDestroy } from '@angular/core';
 import { Header, Footer, Column } from './shared';
 import { TreeNode } from "./model";
-import { AfterViewInit, OnChanges, OnDestroy } from "@angular/core/src/metadata/lifecycle_hooks";
+
 export declare class TreeTable implements OnInit, OnDestroy, AfterViewInit, OnChanges {
     renderer: Renderer2;
     paginator: boolean;
